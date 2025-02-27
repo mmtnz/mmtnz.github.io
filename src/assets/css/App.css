@@ -1,0 +1,177 @@
+
+:root{
+    --header-height: 4rem;
+    --color-header: #282c34;
+    --color-text: white;
+}
+
+/* Apply box-sizing to all elements for better layout control */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* height: 100%; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+/* #root, .App{
+    height: 100vh;
+} */
+
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    /* FUENTES */
+    /* font-family: "Montserrat Thin"; */
+    font-family: 'Segoe UI', Roboto, Helvetica Neue;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+.header{
+    height: var(--header-height);
+    background-color: var(--color-header);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+.arrow-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 0;
+    z-index: 50;
+}
+
+.welcome-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    padding-right: 2rem;
+}
+
+.nav-bar-item{
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+.section {
+    padding-top: var(--header-height);
+    width: 1300px;
+    border: 1px solid blue
+}
+
+.section-header {
+    width: 100%;
+    border: 1px solid red
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-content-main{
+    height: calc(100vh - var(--header-height)) ;
+    border: 1px solid green
+}
+
+.section-content-main h1{
+    font-size: 3rem;
+}
+
+/* ###################### */
+/* ABOUT ME*/
+/* ###################### */
+/* #region about me  */
+.about-bio{
+    width: 500px;
+    font-size: 1.3rem;
+    text-align: left;
+    /* color: var(--color-text); */
+
+}
+.about-skills{
+    width: 500px;
+}
+/* #endregion */
+
+/* ###################### */
+/* PROJECTS*/
+/* ###################### */
+/* #region projects  */
+
+/* #endregion */
+
+/* ###################### */
+/* CERTIFICATIONS*/
+/* ###################### */
+/* #region certifications  */
+.certifications-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.certification{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.certification-data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.certification-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.certification-info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+
+.badge{
+    width: auto;
+    height: 100px;
+}
+
+/* #endregion */
+
+/* ###################### */
+/* CONTACT*/
+/* ###################### */
+/* #region contact  */
+
+/* #endregion */

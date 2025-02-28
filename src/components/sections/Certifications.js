@@ -29,9 +29,9 @@ const Certification = ({data}) => {
 const Certifications = () => {
     return (
         <>
-            <div className="section-header">
-                <h1>Certifications</h1>
-            </div>
+            
+            <h1 className="section-header">Certifications</h1>
+            
             <div className="certifications-container">
                 {personalInfo.certifications.map(certificationData => (
                     <Certification data={certificationData}/>

@@ -4,14 +4,14 @@ import AboutMe from "../components/sections/AboutMe";
 import Certifications from "../components/sections/Certifications";
 import Projects from "../components/sections/Projects";
 import WorkExperience from "../components/sections/WorkExperience";
+import Home from "../components/sections/Home";
+import Contact from "../components/sections/Contact";
 
 const WelcomePage = () => {
     return (
         <div className="welcome-page">
             <section id="home" className="section">
-                <div className="section-content-main">
-                    <h1>HEY, I'M {personalInfo.name.toUpperCase()}</h1>
-                </div>
+                <Home/>
             </section>
     
             <section id="about" className="section">
@@ -31,10 +31,7 @@ const WelcomePage = () => {
             </section>
         
             <section id="contact" className="section">
-                <div className="section-header">
-                    <h1>Contact</h1>
-                </div>
-                <div style={{height: "55rem"}}></div>
+                <Contact/>
             </section>
         </div>
     )

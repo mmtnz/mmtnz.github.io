@@ -61,9 +61,9 @@ const WorkExperience = () => {
 
     return (
         <>
-            <div className="section-header">
-                <h1>Work Experience</h1>
-            </div>
+            
+            <h1 className="section-header">Work Experience</h1>
+            
             <div className="work-experience-container">
                 {personalInfo.workExperience.map(workData => (
                     <WorkCard data={workData}/>

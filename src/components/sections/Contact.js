@@ -1,13 +1,13 @@
 import React from "react";
 import { personalInfo } from "../../data";
 
-const Projects = () => {
+const Contact = () => {
     return (
         <>
             <h1 className="section-header">
-                Projects
+                Contact
             </h1>
         </>
     )
 };
-export default Projects;
+export default Contact;

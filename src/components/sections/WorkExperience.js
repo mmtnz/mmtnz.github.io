@@ -43,17 +43,6 @@ const WorkCard = ({data}) => {
                             <ReactMarkdown>{data.summary}</ReactMarkdown>
                         </div>
 
-                        {/* <div className="work-wrap-summary">
-                            {data.summary.map(item => (
-                                <div className="work-wrap-summry-item">{item}</div>
-                            ))}
-                        </div> */}
-                        {/* <ul className="work-wrap-summary">
-                            {data.summary.map(item => (
-                                <li className="work-wrap-summry-item">{item}</li>
-                            ))}
-                        </ul> */}
-
                         <div className="work-wrap-skills">
                             {data.skillsList.map(item => (
                                 <div className="work-wrap-skill">{item}</div>

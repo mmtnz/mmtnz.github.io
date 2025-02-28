@@ -53,8 +53,11 @@ export const personalInfo = {
                 "Node.js",
                 "MongoDB",
                 "MySQL",
+                "Data structures",
+                "Algorithms",
                 "Scrum",
-                "Kanban"
+                "Kanban",
+
             ]
         },
         {
@@ -62,10 +65,11 @@ export const personalInfo = {
             company: "University of Zaragoza",
             location: "Zaragoza, Spain",
             dates: ["Oct 2021", "May 2023"],
-            summary: "Designed and developed sensor data processing pipelines, automating analysis workflows and significantly reducing manual effort.\n- Trained CNN models for event detection in sensor data, improving accuracy and enabling automation.",
+            summary: "- Designed and developed sensor data processing pipelines, automating analysis workflows and significantly reducing manual effort.\n\n- Trained CNN models for event detection in sensor data, improving accuracy and enabling automation.",
             skillsList: [
                 "Python",
-                "TensorFlow"
+                "TensorFlow",
+                "C#"
             ]
         }
 

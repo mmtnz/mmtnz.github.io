@@ -13,6 +13,14 @@ const Certification = ({data}) => {
                     <div>Expedition date: {data.expeditionDate}</div>
                 </div>
             </div>
+            <div>
+
+            <a href={data.link} target="_blank" rel="noopener noreferrer">
+                <span className="material-symbols-outlined" translate="no" aria-hidden="true">
+                    open_in_new
+                </span>
+            </a>
+            </div>
         </div>
     )
 };

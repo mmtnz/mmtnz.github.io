@@ -1,8 +1,13 @@
 
 :root{
     --header-height: 4rem;
-    --color-header: #282c34;
+    --color-header: #2d1545;
+    /* --color-header: #4f019d; */
+    --color-background: #1a141f;
     --color-text: white;
+    --color-text-inverse: #1a141f;
+    --color-work-header: #7b44b4;
+    --color-work-content: #3c2b4c;
 }
 
 /* Apply box-sizing to all elements for better layout control */
@@ -34,7 +39,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
+
+
+/* ###################### */
+/* UTILS*/
+/* ###################### */
+/* #region utils  */
+.cursor-pointer {
+    cursor: pointer;
+}
+/* #endregion */
 
 .header{
     height: var(--header-height);
@@ -82,12 +99,18 @@ body {
 .section {
     padding-top: var(--header-height);
     width: 1300px;
-    border: 1px solid blue
+    border: 1px solid blue;
+
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
 }
 
 .section-header {
     width: 100%;
-    border: 1px solid red
+    border: 1px solid red;
+    margin-bottom: 4rem;
 }
 
 .section-content {
@@ -135,6 +158,8 @@ body {
 .certifications-container{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    
 }
 
 .certification{
@@ -148,6 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 0.5rem;
 }
 
 .certification-title{
@@ -163,8 +189,114 @@ body {
 
 
 .badge{
-    width: auto;
-    height: 100px;
+    width: 100px;
+    height: auto;
+    /* max-width: 120px; */
+}
+
+/* #endregion */
+
+/* ###################### */
+/* WORK*/
+/* ###################### */
+/* #region work  */
+.work-experience-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.work-card {
+    width: 900px;
+    
+}
+
+.work-card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-work-header);
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.work-card-title{
+    margin-left: 1.5rem;
+}
+
+.work-card-dates{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.work-card-wrap{
+    max-height: 0;
+    transition: cubic-bezier(.4,0,.2,1) .4s;
+    overflow: hidden;
+}
+
+.work-card-wrap.visible{
+    max-height: 100rem;
+}
+
+.work-wrap-content{
+    background-color: var(--color-work-content);
+    margin-top: 1rem;
+    border-radius: 5px;
+    display: flex;
+}
+
+.work-wrap-content-data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.work-wrap-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.work-wrap-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.7rem;
+    width: 800px;
+    /* margin-left: 0 !important;
+    padding-left: 0 !important; */
+}
+
+.work-wrap-summry-item{
+    text-align: left;
+    line-height: 1.3;
+}
+
+.work-wrap-skills{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.work-wrap-skill{
+    background-color: beige;
+    border-radius: 15px;
+    padding: 0.3rem 0.8rem;
+    color: var(--color-text-inverse);
 }
 
 /* #endregion */

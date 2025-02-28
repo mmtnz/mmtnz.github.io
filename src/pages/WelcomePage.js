@@ -3,6 +3,7 @@ import { personalInfo } from "../data";
 import AboutMe from "../components/sections/AboutMe";
 import Certifications from "../components/sections/Certifications";
 import Projects from "../components/sections/Projects";
+import WorkExperience from "../components/sections/WorkExperience";
 
 const WelcomePage = () => {
     return (
@@ -23,6 +24,10 @@ const WelcomePage = () => {
 
             <section id="certifications" className="section">
                 <Certifications/>
+            </section>
+
+            <section id="work-experience" className="section">
+                <WorkExperience/>
             </section>
         
             <section id="contact" className="section">

@@ -26,7 +26,7 @@ const WelcomePage = () => {
                 <Certifications/>
             </section>
 
-            <section id="work-experience" className="section">
+            <section id="experience" className="section">
                 <WorkExperience/>
             </section>
         

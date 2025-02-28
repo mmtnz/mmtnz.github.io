@@ -3,7 +3,62 @@ import WorkExperience from "./components/sections/WorkExperience";
 export const personalInfo = {
     name: "Mario Martinez",
     role: "Software Engineer",
-    bio: "Software engineer with 3 years of experience in software design and development in the telecommunications sector. Acquired practical experience with AWS cloud services through personal projects. Experienced in working within agile methodologies, including Scrum and Kanban, contributing to sprints, team collaboration, and iterative development processes. A gap year in Australia allowed me to refine my English proficiency, build adaptability, and enhance problem-solving skills in varied and challenging contexts.",
+    bio: "Software engineer with 3 years of experience in software design and development in the telecommunications sector.\n\nAcquired practical experience with AWS cloud services through personal projects. Experienced in working within agile methodologies, including Scrum and Kanban, contributing to sprints, team collaboration, and iterative development processes.\n\nA gap year in Australia allowed me to refine my English proficiency, build adaptability, and enhance problem-solving skills in varied and challenging contexts.",
+    skillsList: [
+        {
+            title: "AWS",
+            badge: "/badges/aws-white.png"
+        },
+        {
+            title: "React",
+            badge: "/badges/react.png"
+        },
+        {
+            title: "Python",
+            badge: "/badges/python.png"
+        },
+        {
+            title: "FastAPI",
+            badge: "/badges/fastapi.png"
+        },
+        {
+            title: "Docker",
+            badge: "/badges/docker.png"
+        },
+        {
+            title: "Mongo DB",
+            badge: "/badges/mongo.png"
+        },
+        {
+            title: "MySQL",
+            badge: "/badges/mysql.png"
+        },
+        {
+            title: "Gitlab CI/CD",
+            badge: "/badges/gitlab.png"
+        },
+        {
+            title: "Node.js",
+            badge: "/badges/node.png"
+        },
+        {
+            title: "RabbitMQ",
+            badge: "/badges/rabbitmq.png"
+        },
+        {
+            title: "Kafka",
+            badge: "/badges/kafka.png"
+        },
+        {
+            title: "Java",
+            badge: "/badges/java.png"
+        },
+        {
+            title: "Scrum",
+            badge: "/badges/scrum-logo.png"
+        },
+        
+    ],
     email: "mariomlafuente@gmail.com",
     location: "United Kingdom",
     linkedin: "https://linkedin.com/in/mario-martinez-lafuente",

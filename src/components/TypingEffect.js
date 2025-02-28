@@ -31,7 +31,7 @@ const TypingEffect = ({ text, speed = 100 }) => {
   return (
     <h1 className="font-mono text-lg">
       {displayedText}
-      {showCursor && <span className="text-blue-500">|</span>}
+      {showCursor && <span className="type-effet-cursor">|</span>}
     </h1>
   );
 };

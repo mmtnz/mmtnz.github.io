@@ -10,6 +10,7 @@
     --color-sub-titile: #7b44b4;
     /* --color-work-content: #3c2b4c; */
     --color-work-content: #352a3f;
+    --color-project-card: #5e4377;
 }
 
 /* Apply box-sizing to all elements for better layout control */
@@ -263,6 +264,60 @@ body {
 /* ###################### */
 /* #region projects  */
 
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: var(--color-project-card);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem
+
+}
+
+.project-card-img{
+    width: 100rem;
+    padding: 0.5rem;
+}
+
+.project-card-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-skills{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.project-skill{
+    background-color: beige;
+    border-radius: 15px;
+    padding: 0.3rem 0.8rem;
+    color: var(--color-text-inverse);
+}
 /* #endregion */
 
 /* ###################### */

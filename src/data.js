@@ -62,7 +62,7 @@ export const personalInfo = {
     email: "mariomlafuente@gmail.com",
     location: "United Kingdom",
     linkedin: "https://linkedin.com/in/mario-martinez-lafuente",
-    github: "https://github.com/shivani",
+    github: "https://github.com/mmtnz",
     certifications: [
         {
             title: "AWS Certified Solutions Architect - Associate",
@@ -128,6 +128,28 @@ export const personalInfo = {
             ]
         }
 
+    ],
+    projectsList: [
+        {
+            title: "tidymystorage.com",
+            description: "Full-stack web application to simplify storage inventory management. You can have all your items organised and localized with a simple search in the app.",
+            link: "https://tidymystorage.com",
+            linkRepository: "https://github.com/mmtnz/inventory-system-frontend",
+            techStack: ["AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFormation", "React.js"],
+            skillsList: [],
+            imagesList: "/projects/tidymystorage.png"
+
+        },
+        {
+            title: "Dummy Weather API",
+            description: "This is a simple REST API that fetches weather data from a third-party weather API and uses Redis for in-memory caching. The purpose of this project is to practice integrating Redis for caching responses to reduce redundant external API calls and improve performance.",
+            link: "https://mmtnz.github.io/weather-app-frontend/",
+            linkRepository: "https://github.com/mmtnz/weather-app-api-redis",
+            techStack: [],
+            skillsList: [],
+            imagesList: "/projects/weather.png"
+
+        }
     ]
   };
   

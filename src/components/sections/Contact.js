@@ -6,8 +6,9 @@ const ContactForm = () => {
 
 }
 
-const EMAILJS_SERVICE_ID = process.env.REACT_EMAILJS_SERVICE_ID;
-const EMAILJS_PUBLIC_KEY = process.env.REACT_EMAILJS_PUBLIC_KEY;
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
 const Contact = () => {
 
@@ -16,9 +17,11 @@ const Contact = () => {
 
 
         // send email using emailjs service
+        emailjs.init(EMAILJS_PUBLIC_KEY);
         emailjs
             .send(
                 EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
                 // "your_template_id", // Replace with your actual EmailJS Template ID
                 {name: "mario", email: "marioml_97@outlook.com", message: "hola"},
                 EMAILJS_PUBLIC_KEY // Replace with your EmailJS Public Key

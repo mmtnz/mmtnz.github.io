@@ -44,8 +44,8 @@ const WorkCard = ({data}) => {
                         </div>
 
                         <div className="work-wrap-skills">
-                            {data.skillsList.map(item => (
-                                <div className="work-wrap-skill">{item}</div>
+                            {data.skillsList.map((item, index) => (
+                                <div key={index} className="work-wrap-skill">{item}</div>
                             ))}
                         </div>
                     </div>
@@ -65,8 +65,8 @@ const WorkExperience = () => {
             <h1 className="section-header">Work Experience</h1>
             
             <div className="work-experience-container">
-                {personalInfo.workExperience.map(workData => (
-                    <WorkCard data={workData}/>
+                {personalInfo.workExperience.map((workData, index) => (
+                    <WorkCard key={index} data={workData}/>
                 ))}
 
             </div>

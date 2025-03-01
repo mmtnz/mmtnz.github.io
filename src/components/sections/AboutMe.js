@@ -32,22 +32,22 @@ const AboutMe = () => {
                     {/* <h3 className="about-title">Skills</h3> */}
 
                     <div className="skills-columns">
-                        <div className="skills-container">{skillsRow1.map(skill => (
-                                <div className="skill-container">
+                        <div className="skills-container">{skillsRow1.map((skill, index) => (
+                                <div key={index} className="skill-container">
                                     <img className="skill-badge" src={skill.badge}/>
                                     {skill.title}
                                 </div>
                             ))}
                         </div>
-                        <div className="skills-container">{skillsRow2.map(skill => (
-                                <div className="skill-container">
+                        <div className="skills-container">{skillsRow2.map((skill, index) => (
+                                <div key={index} className="skill-container">
                                     <img className="skill-badge" src={skill.badge}/>
                                     {skill.title}
                                 </div>
                             ))}
                         </div>
-                        <div className="skills-container">{skillsRow3.map(skill => (
-                                <div className="skill-container">
+                        <div className="skills-container">{skillsRow3.map((skill, index) => (
+                                <div key={index} className="skill-container">
                                     <img className="skill-badge" src={skill.badge}/>
                                     {skill.title}
                                 </div>

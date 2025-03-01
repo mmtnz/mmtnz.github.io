@@ -35,8 +35,8 @@ const ProjectCard = ({data}) => {
                 </div>
 
                 <div className="project-skills">
-                    {data.techStack.map(item => (
-                        <div className="project-skill">{item}</div>
+                    {data.techStack.map((item, index) => (
+                        <div key={index} className="project-skill">{item}</div>
                     ))}
                 </div>
             </div>
@@ -53,8 +53,8 @@ const Projects = () => {
             </h1>
 
             <div className="projects-container">
-                {personalInfo.projectsList.map(projectData => (
-                    <ProjectCard data={projectData}/>
+                {personalInfo.projectsList.map((projectData, index) => (
+                    <ProjectCard key={index} data={projectData}/>
                 ))}
             </div>
         </>

@@ -33,8 +33,8 @@ const Certifications = () => {
             <h1 className="section-header">Certifications</h1>
             
             <div className="certifications-container">
-                {personalInfo.certifications.map(certificationData => (
-                    <Certification data={certificationData}/>
+                {personalInfo.certifications.map((certificationData, index) => (
+                    <Certification key={index} data={certificationData}/>
                 ))}
             </div>
         </>

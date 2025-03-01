@@ -113,7 +113,6 @@ body {
 .nav-bar-item{
     cursor: pointer;
     font-size: 1.1rem;
-
 }
 
 /* #endregion */
@@ -235,8 +234,6 @@ body {
     left: 15rem;
     top: 2.8rem;
     z-index: -1;
-    /*  */
-    
     background: var(--color-sub-titile);
     
     /* Keeps Space Reserved */
@@ -522,7 +519,7 @@ body {
     align-items: flex-start;
     text-align: left;
     gap: 0.7rem;
-    width: 800px;
+    width: 50rem;
     /* margin-left: 0 !important;
     padding-left: 0 !important; */
 }
@@ -720,8 +717,73 @@ textarea {
 }
 
 @media (max-width:960px){
+
+    .section{
+        width: 90%;
+    }
+
+    .nav-bar-item{
+        font-size: 0.9rem;
+    }
+
+    .section-content-main h1{
+        font-size: 2.5rem;
+    }
+
+    .title::after {
+        width: 25rem;
+        height: 1rem;
+        left: 13rem;
+        top: 2.5rem;
+    }
+
     .work-card {
         width: 50rem;
     }
+
+    .work-wrap-summary{
+        width: 46rem;
+    }
+}
+
+@media (max-width:690px){
+    
+    
+    .nav-bar {
+        gap: 1rem;
+        padding-right: 1rem;
+    }
+    .nav-bar-item{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 390px){
+    
+    .section-content-main{
+        justify-content: flex-start;
+        margin-top: 10rem;
+    }
+
+    .section-content-main h1{
+        font-size: 2rem;
+    }
+
+    .title::after {
+        width: 8rem;
+        height: 1rem;
+        left: 12rem;
+        top: 4.3rem;
+    }
+
+    .nav-bar{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .nav-bar-item{
+        font-weight: 500;
+    }
+
 }
 /* #endregion */

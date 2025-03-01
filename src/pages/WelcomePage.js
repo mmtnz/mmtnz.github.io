@@ -17,6 +17,10 @@ const WelcomePage = () => {
             <section id="about" className="section">
                 <AboutMe/>
             </section>
+
+            <section id="experience" className="section">
+                <WorkExperience/>
+            </section>
         
             <section id="projects" className="section">
                 <Projects/>
@@ -24,10 +28,6 @@ const WelcomePage = () => {
 
             <section id="certifications" className="section">
                 <Certifications/>
-            </section>
-
-            <section id="experience" className="section">
-                <WorkExperience/>
             </section>
         
             <section id="contact" className="section">

@@ -4,9 +4,8 @@ import { personalInfo } from "../data";
 const Footer = () => {
     return (
         <div className="footer">
-            <div>{`&copy ${personalInfo.name}`}</div>
-
-            <p>Footer</p>
+            <div>&copy; {personalInfo.name}</div>
+            <div>{personalInfo.year}</div>
         </div>
     )
 };

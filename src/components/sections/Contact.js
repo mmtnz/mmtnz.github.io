@@ -46,7 +46,7 @@ const Contact = () => {
 
             <div className="contact-content">
 
-                <div>{personalInfo.contactText}</div>
+                <div className="contact-text">{personalInfo.contactText}</div>
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label>Name</label>
@@ -63,7 +63,7 @@ const Contact = () => {
                         <textarea placeholder="Enter your message"/>
                     </div>
 
-                    <button className="custom-button" type="submit">
+                    <button className="custom-button submit" type="submit">
                         Submit
                     </button>
                     

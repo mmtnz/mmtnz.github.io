@@ -2,6 +2,7 @@ import WorkExperience from "./components/sections/WorkExperience";
 
 export const personalInfo = {
     name: "Mario Martinez",
+    year: "2025",
     role: "Software Engineer",
     bio: "Software engineer with 3 years of experience in software design and development in the telecommunications sector.\n\nAcquired practical experience with AWS cloud services through personal projects. Experienced in working within agile methodologies, including Scrum and Kanban, contributing to sprints, team collaboration, and iterative development processes.\n\nA gap year in Australia allowed me to refine my English proficiency, build adaptability, and enhance problem-solving skills in varied and challenging contexts.",
     skillsList: [

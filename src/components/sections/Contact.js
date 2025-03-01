@@ -47,6 +47,7 @@ const Contact = () => {
             <div className="contact-content">
 
                 <div className="contact-text">{personalInfo.contactText}</div>
+                <div className="contact-form-container">
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label>Name</label>
@@ -68,6 +69,7 @@ const Contact = () => {
                     </button>
                     
                 </form>
+                </div>
             </div>
         </>
     )

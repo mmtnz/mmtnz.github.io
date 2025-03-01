@@ -11,22 +11,29 @@ const ProjectCard = ({data}) => {
             </div>
 
             <div className="project-card-content">
-                
+
                 <div className="project-card-header">
                     <h3>{data.title}</h3>
-                    <a href={data.link} target="_blank" rel="noopener noreferrer">
-                        <span className="material-symbols-outlined" translate="no" aria-hidden="true">
-                            open_in_new
-                        </span>
-                    </a>
-                    <a href={data.linkRepository} target="_blank" rel="noopener noreferrer">
-                        <span className="material-symbols-outlined" translate="no" aria-hidden="true">
-                            open_in_new
-                        </span>
-                    </a>
+                    {data.link && (
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">
+                            <span className="material-symbols-outlined" translate="no" aria-hidden="true">
+                                open_in_new
+                            </span>
+                        </a>
+                    )}
+                    {data.linkRepository && (
+                        <a href={data.linkRepository} target="_blank" rel="noopener noreferrer">
+                            <span className="material-symbols-outlined" translate="no" aria-hidden="true">
+                                open_in_new
+                            </span>
+                        </a>
+                    )}
                 </div>
 
-                <div><ReactMarkdown>{data.description}</ReactMarkdown></div>
+                <div>
+                    <ReactMarkdown>{data.description}</ReactMarkdown>
+                </div>
+
                 <div className="project-skills">
                     {data.techStack.map(item => (
                         <div className="project-skill">{item}</div>

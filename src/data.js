@@ -135,20 +135,28 @@ export const personalInfo = {
             description: "Full-stack web application to simplify storage inventory management. You can have all your items organised and localized with a simple search in the app.",
             link: "https://tidymystorage.com",
             linkRepository: "https://github.com/mmtnz/inventory-system-frontend",
-            techStack: ["AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFormation", "React.js"],
+            techStack: ["AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFormation", "Node.js", "React.js"],
             skillsList: [],
             imagesList: "/projects/tidymystorage.png"
 
         },
         {
             title: "Dummy Weather API",
-            description: "This is a simple REST API that fetches weather data from a third-party weather API and uses Redis for in-memory caching. The purpose of this project is to practice integrating Redis for caching responses to reduce redundant external API calls and improve performance.",
+            description: "This is a simple **REST API** that fetches weather data from a third-party weather API and uses **Redis for in-memory caching**.\n\nThe purpose of this project is to practice integrating Redis for caching responses to reduce redundant external API calls and improve performance.\n\nIt includes an UI where you can select the location, by name, providing the coordinates or clicking directly on an **interactive OpenStreetMap**.",
             link: "https://mmtnz.github.io/weather-app-frontend/",
             linkRepository: "https://github.com/mmtnz/weather-app-api-redis",
-            techStack: [],
+            techStack: ["Node.js", "Express.js", "Redis", "React.js", "OpenStreetMap", "Leaflet"],
             skillsList: [],
             imagesList: "/projects/weather.png"
-
+        },
+        {
+            title: "Object Detection Snake Game",
+            description: "This repository has been created with the aim of understanding how the **object detection API** works.\n\nWith the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The snake game is defined as a class with different methods to move the snake.",
+            // link: "https://mmtnz.github.io/weather-app-frontend/",
+            linkRepository: "https://github.com/mmtnz/object-detection-snake-game",
+            techStack: ["Python", "TensorFlow", "Object Detection API", "MySQL"],
+            skillsList: [],
+            imagesList: "/projects/snake.gif"
         }
     ]
   };

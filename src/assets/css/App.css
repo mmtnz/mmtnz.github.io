@@ -406,7 +406,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-left: 13rem;   
+    width: 100%;
+    align-items: center;
+    /* margin-left: 13rem;    */
 }
 
 .certification{
@@ -414,6 +416,9 @@ body {
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-left: 2rem;
 }
 
 .certification-data{
@@ -421,17 +426,32 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 0.5rem;
+    flex-grow: 1;
 }
 
 .certification-title{
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: left;
 }
 
 .certification-info{
     display: flex;
     flex-direction: row;
-    gap: 2rem
+    gap: 2rem;
+    flex-grow: 1;
+}
+.certification-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.certification-aux{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .badge{
@@ -715,8 +735,10 @@ textarea {
         width: 60rem;
     }
 
-    .certifications-container{
-        margin-left: 7rem;   
+    /* CERTIFICATION */
+    .certification{
+        width: 100%;
+        padding-left: 2rem;
     }
 
     /* WORK */
@@ -749,8 +771,10 @@ textarea {
         justify-content: center;
     }
 
-    .certifications-container{
-        margin-left: 7rem;   
+    /* CERTIFICATION */
+    .certification{
+        width: 100%;
+        padding-left: 2rem;
     }
     
 }
@@ -782,10 +806,11 @@ textarea {
         width: 46rem;
     } */
 
-    /* CERTIFICATIONS*/
-    .certifications-container{
-        margin-left: 13%;   
-    }
+    /* CERTIFICATION */
+    /* .certification{
+        width: 100%;
+        padding-left: 2rem;
+    } */
 
     .certification-title{
         font-size: 1rem;
@@ -838,10 +863,11 @@ textarea {
 
 
 
-    /* CERTIFICATIONS*/
-    .certifications-container{
-        margin-left: 13%;   
-    }
+    /* CERTIFICATION */
+    /* .certification{
+        width: 100%;
+        padding-left: 2rem;
+    } */
 
     .certification-title{
         font-size: 0.9rem;
@@ -888,7 +914,19 @@ textarea {
 
     /* CERTIFICATIONS*/
     .certifications-container{
-        margin-left: 13%;   
+        gap: 2rem;
+    }
+    .certification{
+        padding-left: 10%;
+        flex-direction: column;
+        align-items: flex-start; 
+        width: 90%;
+    }
+
+    .certification-data{
+        flex-direction: row;
+        padding-left: 1rem;
+        width: 90%;
     }
 
     .certification-title{
@@ -897,6 +935,13 @@ textarea {
 
     .certification-info{
         font-size: 0.8rem;
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 0.2rem;
+        padding-left: 1rem;
+        flex-grow: 1;
     }
 
     .badge{
@@ -937,6 +982,11 @@ textarea {
         align-items: flex-start;
         margin-left: 1.6rem;
         /* margin-top: 0.5rem; */
+    }
+    /*CERTIFICATIONS*/
+    .certification{
+        padding-left: 7.5%;
+        width: 100%;
     }
 
 }

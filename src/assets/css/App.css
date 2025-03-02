@@ -7,6 +7,7 @@
     --color-text: white;
     --color-text-inverse: #1a141f;
     --color-work-header: #7b44b4;
+    --color-card: #7b44b4;
     --color-sub-titile: #7b44b4;
     /* --color-work-content: #3c2b4c; */
     --color-work-content: #352a3f;
@@ -330,7 +331,7 @@ body {
 }
 
 .project-card {
-    background-color: var(--color-project-card);
+    background-color: var(--color-card);
     border-radius: 5px;
     width: 95%;
     display: flex;
@@ -469,8 +470,31 @@ body {
     font-weight: bold;
 }
 
+
+.work-card-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0.2rem;
+    flex-grow: 1;
+    /* width:1rem */
+}
+
+
 .work-card-title{
     margin-left: 1.5rem;
+}
+.work-card-subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .work-card-dates{
@@ -478,6 +502,16 @@ body {
     flex-direction: row-reverse;
     gap: 0.5rem;
     margin-right: 1.5rem;
+}
+
+.work-card-dates.mobile{
+    font-weight: 500;
+    font-size: 0.9rem;
+    /* margin-left: 1.5rem; */
+}
+
+.work-card-mobile-icon{
+    margin-right: 1rem;
 }
 
 .work-card-wrap{
@@ -685,8 +719,13 @@ textarea {
         margin-left: 7rem;   
     }
 
-
-
+    /* WORK */
+    .work-card {
+        width: 80%;
+    }
+    .work-wrap-summary{
+        width: 95%;
+    }
 }
 
 
@@ -737,12 +776,98 @@ textarea {
         top: 2.5rem;
     }
 
-    .work-card {
-        width: 50rem;
+
+
+    /* .work-wrap-summary{
+        width: 46rem;
+    } */
+
+    /* CERTIFICATIONS*/
+    .certifications-container{
+        margin-left: 13%;   
     }
 
+    .certification-title{
+        font-size: 1rem;
+    }
+
+    .certification-info{
+        font-size: 0.8rem;
+    }
+
+    .badge{
+        width: 6rem;
+    }
+
+    /* CONTACT */
+    .contact-form-container{
+        width: 80%;
+    }
+}
+
+@media (max-width:768px){
+
+    .section-content-main h1{
+        font-size: 2.2rem;
+    }
+
+    .title::after {
+        width: 18rem;
+        height: 0.9rem;
+        left: 13rem;
+        top: 2rem;
+    }
+    
+    /* WORK*/
+    .work-card-header{
+        height: 5rem;
+    }
+    .work-card {
+        width: 90%;
+    }
+    .work-wrap-location{
+        font-size: 0.9rem;
+    }
     .work-wrap-summary{
-        width: 46rem;
+        font-size: 0.9rem;
+        width: 85%;
+    }
+    .work-wrap-skill{
+        font-size: 0.8rem;
+    }
+
+
+
+    /* CERTIFICATIONS*/
+    .certifications-container{
+        margin-left: 13%;   
+    }
+
+    .certification-title{
+        font-size: 0.9rem;
+    }
+
+    .certification-info{
+        font-size: 0.8rem;
+    }
+
+    .badge{
+        width: 4rem;
+    }
+
+    /* CONTACT */
+    .contact-text{
+        width: 80%;
+    }
+
+    .contact-form-container{
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .contact-form {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -756,9 +881,72 @@ textarea {
     .nav-bar-item{
         font-size: 0.8rem;
     }
+
+    .work-card {
+        width: 90%;
+    }
+
+    /* CERTIFICATIONS*/
+    .certifications-container{
+        margin-left: 13%;   
+    }
+
+    .certification-title{
+        font-size: 0.9rem;
+    }
+
+    .certification-info{
+        font-size: 0.8rem;
+    }
+
+    .badge{
+        width: 3rem;
+    }
+
+
 }
-@media (max-width: 390px){
+@media (max-width: 506px){
+    /* .section-content-main h1{
+        font-size: 2rem;
+    } */
+    .title::after {
+        width: 8rem;
+        height: 1rem;
+        left: 12rem;
+        top: 4.3rem;
+    }
+
+    .skill-container{
+        border: 2.5px solid var(--color-work-header);
+        border-radius: 5px;
+        width: 6rem;
+        /* height: 5rem; */
+        padding: .5rem 0;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        padding: .3rem 0;
+    }
     
+    .skill-badge{
+        width: 1.5rem;
+    }
+    /*WORK*/
+    .work-card-subtitle{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1.6rem;
+        /* margin-top: 0.5rem; */
+    }
+
+}
+@media (max-width: 395px){
+    
+    .arrow-to-top {
+        bottom: 3rem;
+        right: 0.5rem;
+    }
+
     .section-content-main{
         justify-content: flex-start;
         margin-top: 10rem;
@@ -775,6 +963,10 @@ textarea {
         top: 4.3rem;
     }
 
+    .description{
+        width: 80%;
+    }
+
     .nav-bar{
         width: 100%;
         justify-content: center;
@@ -784,6 +976,62 @@ textarea {
     .nav-bar-item{
         font-weight: 500;
     }
+
+    
+    .section-header {
+        width: 100%;
+        /* border: 1px solid red; */
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .section-header::after {
+        border-bottom: 1.1rem solid var(--color-sub-titile);
+        width: 10rem;
+        left: 4rem;
+        top: -0.8rem;
+    }
+
+    .about-bio{
+        width: 85%;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    /* WORK*/
+    .work-card-header{
+        background-color: var(--color-work-header);
+        height: 5rem;
+        border-radius: 5px;
+        /* font-size: 0.8rem; */
+        /* font-weight: bold; */
+    }
+
+    .work-card-title{
+        margin-left: 1rem;
+    }
+    .work-card-mobile-icon{
+        margin-right: 0.5rem;
+    }
+
+    /*WORK*/
+    .work-card-subtitle{
+        margin-left: 1.4rem;
+        font-size: 0.8rem;
+        /* margin-top: 0.5rem; */
+    }
+    .work-card-date.mobile{
+        font-size: 0.8rem;
+    }
+
+
+
+    
+
+
 
 }
 /* #endregion */

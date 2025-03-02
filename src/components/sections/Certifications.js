@@ -19,7 +19,7 @@ const CertificationMobile = ({data}) => {
                         <div>Expedition date: {data.expeditionDate}</div>
                     </div>
                     <div className="certification-link">
-                        <a href={data.link} target="_blank" rel="noopener noreferrer">
+                        <a className="external-link" href={data.link} target="_blank" rel="noopener noreferrer">
                             <span className="material-symbols-outlined" translate="no" aria-hidden="true">
                                 open_in_new
                             </span>
@@ -35,7 +35,7 @@ const CertificationMobile = ({data}) => {
 };
 
 const Certification = ({data}) => {
-    const isMobile = useMediaQuery({ maxWidth: 690 });
+
     return (
         <div className="certification">
             <img className="badge" src={data.badge}/>
@@ -45,39 +45,22 @@ const Certification = ({data}) => {
 
                 <div className="certification-title">{data.title}</div>
 
-                {!isMobile ? (
-                    <div className="certification-info">
-                        <div>Issuer: {data.issuer}</div>
-                        <div>Expedition date: {data.expeditionDate}</div>
-                    </div>
-                ): (
                 
-                    <div className="certification-aux">
-                        <div className="certification-info">
-                            <div>Issuer: {data.issuer}</div>
-                            <div>Expedition date: {data.expeditionDate}</div>
-                        </div>
-                        <div className="certification-link">
-                            <a href={data.link} target="_blank" rel="noopener noreferrer">
-                                <span className="material-symbols-outlined" translate="no" aria-hidden="true">
-                                    open_in_new
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                )}
+                <div className="certification-info">
+                    <div>Issuer: {data.issuer}</div>
+                    <div>Expedition date: {data.expeditionDate}</div>
+                </div>
+               
 
             </div>
 
-            {!isMobile && (
-                <div className="certification-link">
-                    <a href={data.link} target="_blank" rel="noopener noreferrer">
-                        <span className="material-symbols-outlined" translate="no" aria-hidden="true">
-                            open_in_new
-                        </span>
-                    </a>
-                </div>
-            )}
+            <div className="certification-link">
+                <a className="external-link" href={data.link} target="_blank" rel="noopener noreferrer">
+                    <span className="material-symbols-outlined" translate="no" aria-hidden="true">
+                        open_in_new
+                    </span>
+                </a>
+            </div>
         </div>
     )
 };

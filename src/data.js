@@ -133,7 +133,7 @@ export const personalInfo = {
     projectsList: [
         {
             title: "tidymystorage.com",
-            description: "Full-stack web application to simplify storage inventory management. You can have all your items organised and localized with a simple search in the app.",
+            description: "Full-stack web application to simplify storage inventory management. You can have all your items organised and localised with a simple search in the app.",
             link: "https://tidymystorage.com",
             linkRepository: "https://github.com/mmtnz/inventory-system-frontend",
             techStack: ["AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFormation", "Node.js", "React.js"],
@@ -160,6 +160,10 @@ export const personalInfo = {
             imagesList: "/projects/snake.gif"
         }
     ],
-    contactText: "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible."
+    contactText: "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.",
+    socialLogos: {
+        github: "/social/github.svg",
+        linkedin: "/social/linkedin.png"
+    }
   };
   

@@ -100,7 +100,7 @@ export const personalInfo = {
             company: "Aragon Photonics Labs",
             location: "Zaragoza, Spain",
             dates: ["Oct 2021", "May 2023"],
-            summary: "- Built internal software for efficient sensor data management, including **data processing pipelines** for real-time alarm generation and notifications, following **Scrum** practices to ensure on-time delivery and stakeholder alignment.\n- Designed and implemented **REST APIs** to seamlessly integrate solutions into client workflows.\n- Optimized the computational cost of processing software by 50%, enabling implementation on lower-resource systems.\n- Accelerated data processing algorithms by 10x through GPU parallelization.\n- Improved system reliability and scalability by deploying **containerized microservices** and optimizing inter-service communication. All within a **Kanban** framework for transparent progress tracking.\n\n- Automated development pipelines using **GitLab CI/CD**, reducing deployment time and ensuring code quality.",
+            summary: "- Built internal software for efficient sensor data management, including **data processing pipelines** for real-time alarm generation and notifications, following **Scrum** practices to ensure on-time delivery and stakeholder alignment.\n- Designed and implemented **REST APIs** to seamlessly integrate solutions into client workflows.\n- Optimized the computational cost of processing software by **50%**, enabling implementation on lower-resource systems.\n- Accelerated data processing algorithms by **10x** through GPU parallelization.\n- Improved system reliability and scalability by deploying **containerized microservices** and optimizing inter-service communication. All within a **Kanban** framework for transparent progress tracking.\n\n- Automated development pipelines using **GitLab CI/CD**, reducing deployment time and ensuring code quality.",
             skillsList: [
                 "Python",
                 "Rest API",
@@ -120,7 +120,7 @@ export const personalInfo = {
             title: "R&D Engineer",
             company: "University of Zaragoza",
             location: "Zaragoza, Spain",
-            dates: ["Oct 2021", "May 2023"],
+            dates: ["Nov 2019", "Oct 2021"],
             summary: "- Designed and developed sensor data processing pipelines, automating analysis workflows and significantly reducing manual effort.\n\n- Trained CNN models for event detection in sensor data, improving accuracy and enabling automation.",
             skillsList: [
                 "Python",
@@ -138,7 +138,7 @@ export const personalInfo = {
             linkRepository: "https://github.com/mmtnz/inventory-system-frontend",
             techStack: ["AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFormation", "Node.js", "React.js"],
             skillsList: [],
-            imagesList: "/projects/tidymystorage.png"
+            imagesList: "/projects/tidymystorage.PNG"
 
         },
         {
@@ -148,7 +148,7 @@ export const personalInfo = {
             linkRepository: "https://github.com/mmtnz/weather-app-api-redis",
             techStack: ["Node.js", "Express.js", "Redis", "React.js", "OpenStreetMap", "Leaflet"],
             skillsList: [],
-            imagesList: "/projects/weather.png"
+            imagesList: "/projects/weather.PNG"
         },
         {
             title: "Object Detection Snake Game",

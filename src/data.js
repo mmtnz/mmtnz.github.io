@@ -155,15 +155,15 @@ export const personalInfo = {
             description: "This repository has been created with the aim of understanding how the **object detection API** works.\n\nWith the object detecion API and a pretrained model it is possible to capture hand's position which are used to change snake's direction. The snake game is defined as a class with different methods to move the snake.",
             // link: "https://mmtnz.github.io/weather-app-frontend/",
             linkRepository: "https://github.com/mmtnz/object-detection-snake-game",
-            techStack: ["Python", "TensorFlow", "Object Detection API", "MySQL"],
+            techStack: ["Python", "TensorFlow", "Object Detection API", "MySQL", "OOP"],
             skillsList: [],
             imagesList: "/projects/snake.gif"
         }
     ],
     contactText: "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.",
     socialLogos: {
-        github: "/social/github.svg",
-        linkedin: "/social/linkedin.png"
+        github: { logo: "/social/github.svg", link: "https://github.com/mmtnz" },
+        linkedin: {logo: "/social/linkedin.png", link: "https://www.linkedin.com/in/mario-martinez-lafuente"}
     }
   };
   

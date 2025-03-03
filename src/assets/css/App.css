@@ -218,6 +218,7 @@ body {
 /* #region home */
 .description{
     margin-bottom: 2rem;
+    width: 60%;
 }
 .custom-button{
     border: 2px var(--color-sub-titile) solid;
@@ -706,6 +707,11 @@ body {
 .contact-social-logo{
     height: 100%;
 }
+
+.social-logo-container{
+    height: 2rem;
+}
+
 .contact-text{
     width: 50%;
 }
@@ -935,6 +941,10 @@ textarea {
         left: 13rem;
         top: 2rem;
     }
+
+    .description{
+        width: 80%;
+    }
     
     /* WORK*/
     .work-card-header{
@@ -1071,6 +1081,11 @@ textarea {
         top: 4.3rem;
     }
 
+    .description{
+        width: 100%;
+        /* font-size: ; */
+    }
+
     .skill-container{
         border: 2.5px solid var(--color-work-header);
         border-radius: 5px;
@@ -1124,7 +1139,8 @@ textarea {
     }
 
     .description{
-        width: 80%;
+        width: 95%;
+        font-size: 0.9rem;
     }
 
     .nav-bar{

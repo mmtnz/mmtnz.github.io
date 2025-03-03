@@ -3,7 +3,7 @@ import { personalInfo } from "../../data";
 import ReactMarkdown from "react-markdown";
 import { useMediaQuery } from "react-responsive";
 
-const GITHUB_LOGO_URL = personalInfo.socialLogos.github;
+const GITHUB_LOGO_URL = personalInfo.socialLogos.github.logo;
 
 const ProjectCardMobile = ({data}) => {
     return (
@@ -32,7 +32,9 @@ const ProjectCardMobile = ({data}) => {
                 </div>
                 
                 <div className="project-card-img">
-                    <img src={data.imagesList}/>
+                    <a href={data.linkRepository} title="View repository" target="_blank" rel="noopener noreferrer">
+                        <img src={data.imagesList}/>
+                    </a>
                 </div>
 
                 <div>

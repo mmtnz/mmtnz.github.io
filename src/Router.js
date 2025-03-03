@@ -23,7 +23,7 @@ const Router = () => {
                         } />
                     </Routes>
                 </div>
-                {/* <Arrow2Top/> */}
+                <Arrow2Top/>
                 <Footer/>
             </div>
         </BrowserRouter>

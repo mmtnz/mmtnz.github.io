@@ -76,9 +76,11 @@ const Contact = () => {
 
                 <div className="contact-social-container">
                     {Object.values(personalInfo.socialLogos).map(social => (
-                        <a href={social.link} title={social.link} target="_blank" rel="noopener noreferrer">
-                         <img className="contact-social-logo" src={social.logo}/>
-                        </a>
+                        <div className="social-logo-container">
+                            <a href={social.link} title={social.link} target="_blank" rel="noopener noreferrer">
+                                <img className="contact-social-logo" src={social.logo}/>
+                            </a>
+                        </div>
                     ))}
                 </div>
                 

@@ -9,9 +9,9 @@ import ReactMarkdown from "react-markdown";
 const AboutMe = () => {
 
     const numSkills = personalInfo.skillsList.length;
-    const skillsRow1 = personalInfo.skillsList.slice(0,4);
-    const skillsRow2 = personalInfo.skillsList.slice(4,9);
-    const skillsRow3 = personalInfo.skillsList.slice(9, numSkills);
+    const skillsRow1 = personalInfo.skillsList.slice(0,5);
+    const skillsRow2 = personalInfo.skillsList.slice(5,11);
+    const skillsRow3 = personalInfo.skillsList.slice(11, numSkills);
 
 
     return (

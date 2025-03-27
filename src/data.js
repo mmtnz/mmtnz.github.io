@@ -24,6 +24,11 @@ export const personalInfo = {
             badge: "/badges/fastapi.png"
         },
         {
+            title: "GraphQL",
+            badge: "/badges/graphql.png"
+        },
+
+        {
             title: "Docker",
             badge: "/badges/docker.png"
         },
@@ -44,6 +49,12 @@ export const personalInfo = {
             badge: "/badges/node.png"
         },
         {
+            title: "Express",
+            badge: "/badges/express.png"
+        },
+
+
+        {
             title: "RabbitMQ",
             badge: "/badges/rabbitmq.png"
         },
@@ -58,6 +69,10 @@ export const personalInfo = {
         {
             title: "Scrum",
             badge: "/badges/scrum-logo.png"
+        },
+        {
+            title: "PostgreSQL",
+            badge: "/badges/postgreSQL.png"
         },
         
     ],
@@ -148,8 +163,17 @@ export const personalInfo = {
             techStack: ["REST API", "Authentication", "AWS", "API Gateway", "Lambda", "DynamoDB", "Cognito", "S3", "CloudFront", "Route 53", "CloudFormation", "Node.js", "React.js"],
             skillsList: [],
             imagesList: "/projects/tidymystorage.PNG"
-
         },
+        {
+            title: "Chat App",
+            description: "A full-stack real-time chat application with a **GraphQL** backend and a responsive frontend. The backend is built with **AWS AppSync** and uses **DynamoDB** as data base to manage conversations and message. There is also a local based option using **apollo-server-express** and a Dockerized **PostgreSQL** database. The frontend connects to the backend via GraphQL to let users create conversations, send messages, and receive real-time updates through subscriptions.",
+            link: "https://mmtnz.github.io/chat-app-front",
+            linkRepository: "https://github.com/mmtnz/chat-app-back-aws",
+            techStack: ["GrapghQL API", "AWS AppSync", "AWS DynamoDB", "AWS Lambda", "AWS CloudFormation", "AWS CloudWatch", "Apollo Server Express", "Apollo Client", "Express", "React", "Node.js", "PostgreSQL", "Docker", "CI", "Jest"],
+            skillsList: [],
+            imagesList: "/projects/chat-app.PNG"
+        },
+        
         {
             title: "Dummy Weather API",
             description: "This is a simple **REST API** that fetches weather data from a third-party weather API and uses **Redis for in-memory caching**.\n\nThe purpose of this project is to practice integrating Redis for caching responses to reduce redundant external API calls and improve performance.\n\nIt includes an UI where you can select the location, by name, providing the coordinates or clicking directly on an **interactive OpenStreetMap**.",
